@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PricingController;
 
-Route::post('/price-recommendation', [PricingController::class, 'getPrice']);
+Route::get('/test', function () {
+    return response()->json(['status' => 'ok']);
+});
+
+Route::get('/pricing', [\App\Http\Controllers\PricingController::class, 'getPrice']);
