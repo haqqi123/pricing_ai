@@ -236,7 +236,7 @@
                 const payload = {
                     location: document.getElementById('location').value,
                     date: document.getElementById('date').value,
-                    rating: parseFloat(document.getElementById('rating').value)
+                    rating: parseFloat(document.getElementById('rating-slider').value)
                 };
 
                 // Fetch API
