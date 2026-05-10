@@ -6,4 +6,4 @@ Route::get('/test', function () {
     return response()->json(['status' => 'ok']);
 });
 
-Route::get('/pricing', [\App\Http\Controllers\PricingController::class, 'getPrice']);
+Route::post('/price-recommendation', [\App\Http\Controllers\PricingController::class, 'getPrice']);
